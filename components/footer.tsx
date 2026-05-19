@@ -34,7 +34,8 @@ export const Footer = () => {
               </h3>
               <div className="flex flex-col gap-2 text-gray-500 mt-6 text-sm">
                 <p>Sandbox Environment</p>
-                <p>Terms & Conditions</p>
+                <a href="/term">Terms Conditions</a>
+
                 <p>API Documentation</p>
                 <p>Privacy Policy</p>
                 <p>Contact Us</p>

@@ -21,7 +21,7 @@ export const Getstarted = () => {
             <p className="text-white text-[14px] sm:text-[18px] font-semibold">
               Get Started
             </p>
-            <FaArrowRight className="text-white" />
+            <FaArrowRight className="text-white animate-bounce" />
           </div>
         </div>
       </div>
