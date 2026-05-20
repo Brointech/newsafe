@@ -3,10 +3,12 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { Button, Dropdown, Label } from "@heroui/react";
+import { BiMenuAltRight } from "react-icons/bi";
 
 export const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   // const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   // const handleMouseEnter = () => {
@@ -48,6 +50,7 @@ export const Navbar = () => {
         />
 
         {/* Menu button */}
+        <BiMenuAltRight className="block md:hidden text-4xl text-blue-800 cursor-pointer" />
         <ul className="hidden md:flex items-center gap-10 cursor-pointer">
           <li className="hover:text-blue-600 hover:font-bold font-medium text-gray-600 text-[15px]">
             <a href="/">Home</a>
@@ -131,72 +134,7 @@ export const Navbar = () => {
               </div>
             </div>
           </li>
-          {/* <div
-            className="relative inline-block"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseEnter}
-          >
-            <Dropdown isOpen={isOpen} onOpenChange={setIsOpen}>
-              <Button
-                aria-label="Menu"
-                className="
-    bg-transparent
-    border-none
-    shadow-none
-    rounded-none
-    px-0
-    py-0
-    text-[16px]
-    font-normal
-    hover:font-semibold
-    text-slate-500
-    hover:bg-transparent
-    hover:text-blue-700
-    focus:outline-none
-    focus:ring-0
-    data-hovered:bg-transparent
-  "
-              >
-                Accounts
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4 mt-0.5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </Button>
-              <Dropdown.Popover>
-                <Dropdown.Menu
-                  onAction={(key) => console.log(`Selected: ${key}`)}
-                >
-                  <Dropdown.Item id="new-file" textValue="New file">
-                    <Label>New file</Label>
-                  </Dropdown.Item>
-                  <Dropdown.Item id="copy-link" textValue="Copy link">
-                    <Label>Copy link</Label>
-                  </Dropdown.Item>
-                  <Dropdown.Item id="edit-file" textValue="Edit file">
-                    <Label>Edit file</Label>
-                  </Dropdown.Item>
-                  <Dropdown.Item
-                    id="delete-file"
-                    textValue="Delete file"
-                    variant="danger"
-                  >
-                    <Label>Delete file</Label>
-                  </Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown.Popover>
-            </Dropdown>
-          </div> */}
+
           <li className="hover:text-blue-600 hover:font-bold font-medium text-gray-600 text-[15px]">
             <Link href="/fintech">Fintech</Link>
           </li>

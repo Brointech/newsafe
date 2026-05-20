@@ -19,10 +19,9 @@ const Contact = () => {
           </button>
         </div>
       </div>
+      <Questions />;
     </section>
   );
 };
-
-<Questions />;
 
 export default Contact;

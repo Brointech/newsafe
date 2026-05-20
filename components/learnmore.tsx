@@ -3,10 +3,10 @@ import { FaArrowRight } from "react-icons/fa";
 
 export const Learnmore = () => {
   return (
-    <section className=" py-16 px-4 md:px-10 lg:px-30">
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+    <section className=" py-16 px-4 md:px-10 lg:px-28">
+      <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row gap-12 justify-between">
         {/* Image (Phone) */}
-        <div className="flex justify-center lg:justify-start">
+        <div className="flex justify-center lg:justify-end">
           <img
             src="/phone 3.svg"
             alt=""
@@ -15,7 +15,7 @@ export const Learnmore = () => {
         </div>
 
         {/* Heading */}
-        <div className="text-center lg:text-left">
+        <div className="text-center lg:text-left mt-20">
           <h2 className="text-3xl sm:text-4xl md:text-4xl font-bold lg:text-end text-gray-800 leading-tight">
             Hey there, Having <br className="hidden sm:block" />
             Difficulty(ies)?
@@ -28,7 +28,7 @@ export const Learnmore = () => {
             email is also wide open. If we don't serve you, who <br />
             will?
           </p>
-          <div className="flex items-center gap-2 mt-6 justify-center  lg:justify-end cursor-pointer">
+          <div className="flex items-center gap-2 mt-6 justify-center lg:justify-end cursor-pointer">
             <p className="text-[#034EA2] ">Learn more </p>
             <FaArrowRight className="text-[#034EA2]" />
           </div>
