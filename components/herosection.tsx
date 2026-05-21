@@ -27,7 +27,7 @@ export const Herosection = () => {
 
           {/* Licence */}
           <div className="flex items-center md:justify-center lg:justify-start px-30 lg:px-0 gap-10">
-            <div className="flex gap-2 sm:flex-col lg:items-center lg:justify-center">
+            <div className="flex gap-2 flex-col lg:items-center lg:justify-center">
               <p className="text-gray-400 ml-2 text-[12px] sm:text-[16px] md:text-[16px]">
                 Licenced by
               </p>
